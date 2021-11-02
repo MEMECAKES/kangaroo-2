@@ -114,23 +114,24 @@ function draw() {
     shurbsGroup.setLifetimeEach(-1);
     
   }
-  }
+  
 
   
   drawSprites();
 
   textSize(20);
-stroke(3);
-fill("black")
-text("Score:"+ score, camera.position.text,50);
+  stroke(3);
+  fill("black")
+  text("Score:"+ score, camera.position.text,50);
 
-if (score >= 5) {
-kangaroo.visable = false;
-textSize(30);
-stroke(3);
-fill("black");
-text("Congragulation!! You win the game!! ", 70,200);
-gameState = WIN;
+  if (score >= 5) {
+  kangaroo.visable = false;
+  textSize(30);
+  stroke(3);
+  fill("black");
+  text("Congragulation!! You win the game!! ", 70,200);
+  gameState = WIN;
+  }
 }
 
 
